@@ -1,0 +1,10 @@
+eMessage-core.jar
+svn: http://szxsvn07-rd:6801/svn/EBG_UC_espace_mobile_SVN/Code/eSpace Mobile Product Code/eSpaceMobile/trunk/Android/SDK/jar/eMessage-core
+
+eMessage-PublicService.jar
+svn: http://szxsvn07-rd:6801/svn/EBG_UC_espace_mobile_SVN/Code/eSpace Mobile Product Code/eSpaceMobile/trunk/Android/SDK/jar/eMessage-PublicService
+
+ecslib.jar
+svn: http://szxsvn07-rd:6801/svn/EBG_UC_espace_mobile_SVN/Code/eSpace Component Code/V100R001C01/eSpaceMobileSDK/trunk/Android/Code/ecs4android
+
+

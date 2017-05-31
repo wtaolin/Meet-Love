@@ -1,0 +1,5 @@
+
+     //安全浏览器默认打开参数。
+        /*enableAnyOfficeBrowser = true;
+        gatewaySVNAddr = "byod-web.huawei.com";
+        gatewaySVNPort = "443";*/

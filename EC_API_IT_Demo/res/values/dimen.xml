@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height">50dp</dimen>
+    <dimen name="wight">50dp</dimen>
+    
+    <dimen name="grid_item_wight">80dp</dimen>
+</resources>

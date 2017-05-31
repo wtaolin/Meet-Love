@@ -1,0 +1,1 @@
+说明： 由于Android工程的限制，所有的so库都必须放在libs/armeabi下面，打包后Android才能识别。

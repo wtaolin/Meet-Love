@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_contact_normal_head" />
+
+    <ImageView
+        android:id="@+id/status_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/head"
+        android:src="@drawable/recent_offline_small" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/status_image" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/status_image" />
+
+    <TextView
+        android:id="@+id/unread"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/red_shape_max"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

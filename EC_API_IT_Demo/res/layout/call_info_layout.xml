@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_contact_normal_head" />
+
+    <LinearLayout
+        android:id="@+id/call_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_alignBottom="@+id/avatar"
+        android:layout_toRightOf="@+id/avatar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dispalyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+        
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

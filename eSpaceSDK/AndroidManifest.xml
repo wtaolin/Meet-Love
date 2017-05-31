@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huawei"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <!-- 必需的权限 -->
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <application>
+
+
+        <meta-data android:name="com.huawei.glide.EspaceGlideModule" android:value="GlideModule"></meta-data>
+
+        <!--对外暴露的组件-->
+        <receiver
+                android:name="com.huawei.push.BootCompletedReceiver"
+                android:process="@string/pushProcessName">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="com.huawei.ucapi.pushcheck" />
+            </intent-filter>
+            <intent-filter android:priority="9000">
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <!--对外暴露的组件-->
+        <service android:name="com.huawei.push.PushService"
+                 android:process="@string/pushProcessName"
+                 android:description="@string/pushService"
+                 android:label="@string/push"
+                 android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="com.huawei.ucapi.push.ipc.Ipush" />
+            </intent-filter>
+        </service>
+
+        <!-- Push通知栏拉开后大图标 -->
+        <meta-data android:name="LogoResourceId" android:resource="@drawable/message_notice_icon"/>
+        <!-- Push通知栏上小图标 -->
+        <meta-data android:name="MessageResourceId" android:resource="@drawable/message_icon"/>
+        <!-- Push通知栏拉起动作ActionName -->
+        <meta-data android:name="PushActionName" android:value="com.huawei.ucapi.pushNotify"/>
+        <!-- Push通知栏拉起动作CategoryName -->
+        <meta-data android:name="PushCategoryName" android:value="com.huawei.ucapi.pushCategory"/>
+        <!-- Push服务的Action名称 -->
+        <meta-data android:name="PushServiceActionName" android:value="com.huawei.ucapi.push.ipc.Ipush"/>
+        <!-- Alarm服务的Action名称 -->
+        <meta-data android:name="PushAlarmActionName" android:value="com.huawei.ucapi.pushcheck"/>
+    </application>
+
+</manifest>

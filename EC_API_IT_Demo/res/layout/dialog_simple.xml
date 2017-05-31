@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/pop_bg_all_normal">
+    <TextView style="@style/title_dialog_style"
+              android:text="@string/info"
+              android:id="@+id/dialog_title"/>
+
+    <include layout="@layout/dialog_title_content_divider"></include>
+    <TextView style="@style/content_dialog_style"
+              android:id="@+id/dialog_message"/>
+    <include layout="@layout/dialog_content_divider_hor"></include>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center">
+        <Button style="@style/btn_dialog_style"
+                android:text="@string/btn_sure"
+                android:id="@+id/dialog_single_button"/>
+    </LinearLayout>
+
+
+</LinearLayout>

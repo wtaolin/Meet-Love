@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="logout_exit">
+        <item>Logout</item>
+        <item>Exit</item>
+	</string-array>
+	<string-array name="conf_time_picker">
+		<item>00min</item>
+		<item>10min</item>
+		<item>20min</item>
+		<item>30min</item>
+		<item>40min</item>
+		<item>50min</item>
+	</string-array>
+	<string-array name="conf_hour_picker">
+		<item>0hour</item>
+		<item>1hour</item>
+		<item>2hour</item>
+		<item>3hour</item>
+		<item>4hour</item>
+		<item>5hour</item>
+		<item>6hour</item>
+		<item>7hour</item>
+		<item>8hour</item>
+		<item>9hour</item>
+		<item>10hour</item>
+		<item>11hour</item>
+		<item>12hour</item>
+	</string-array>
+	<string-array name="autoanswer_second_picker">
+        <item>01sec</item>
+        <item>02sec</item>
+        <item>03sec</item>
+        <item>04sec</item>
+        <item>05sec</item>
+        <item>06sec</item>
+        <item>07sec</item>
+        <item>08sec</item>
+        <item>09sec</item>
+        <item>10sec</item>
+        <item>11sec</item>
+        <item>12sec</item>
+        <item>13sec</item>
+        <item>14sec</item>
+        <item>15sec</item>
+    </string-array>
+    <integer-array name="im_font_size">
+        <item>13</item>
+        <item>15</item>
+        <item>17</item>
+        <item>20</item>
+    </integer-array>
+    <string-array name="im_font_size_name">
+        <item>@string/font_small</item>
+        <item>@string/font_medium</item>
+        <item>@string/font_large</item>
+        <item>@string/font_xlarge</item>
+    </string-array>
+</resources>

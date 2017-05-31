@@ -1,0 +1,99 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light"/>
+    
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/bg_dialog_window</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog_text_new">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="um_load_text_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+     <!-- style of dialog title -->
+    <style name="title_dialog_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+    
+    <!-- style of dialog button -->
+    <style name="btn_dialog_style">
+
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:background">@drawable/bg_dialog_selector</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- style of dialog content -->
+    <style name="content_dialog_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+    
+    <style name="chat_item_root">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@color/chat_background</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+
+    </style>
+    
+    <style name="chat_content_container">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+
+    </style>
+    
+    <style name="chat_fail_image">
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="transparent_theme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    
+</resources>

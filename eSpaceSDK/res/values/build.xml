@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_version">v3.0.0.400</string>
+    <string name="enable_anyoffice_browser">0</string>
+    <string name="download_url"></string>
+
+    <!--use build config to decide "force_open_log" is use. use_build, 0 not use build config, 1 use force_open_log value to decide log state -->
+    <!--force_open_log, 0 info and higher log ,1 debug and higher log-->
+    <string name="use_build">0</string>
+    <string name="force_open_log">1</string>
+    
+    <string name="show_privacy_statement">1</string>
+    <string name="market_w3m">0</string>
+    <string name="svn_white_address">meeting.huawei.com;10.*;127.0.0.1;172.16.*;192.168.*;*.huawei.com; */w3-survey</string>
+    <string name="svn_black_address">www.huawei.com;ecs.huawei.com;clouddrive-007.huawei.com;w3m.huawei.com;xinsheng.huawei.com;appstore.huawei.com;career.huawei.com;carrier.huawei.com;cloud.huawei.com;club.huawei.com;developer.huawei.com;easy.huawei.com;echannel.huawei.com;emui.huawei.com;esdk.huawei.com;hws.huawei.com;hwtrip.huawei.com;itravel.huawei.com;learning.huawei.com;mobile.huawei.com;scs.huawei.com;sec.huawei.com;support.huawei.com;terminal.huawei.com;uniportal.huawei.com;university.huawei.com;e.huawei.com;pr.huawei.com;consumer.huawei.com;w3m*.huawei.com</string>
+    <string name="url_w3_sso">http://login.huawei.com/</string>
+    <string name="url_w3">http://w3.huawei.com</string>
+    <string name="url_w3_workplace">http://w3.huawei.com/next/m/?from=espace</string>
+    <string name="url_hwrd_workplace">http://lightapp.huawei.com/lightapp/whatishot/</string>
+    <string name="url_game_workplace">http://lightapp.huawei.com/lightapp/espacegame/#/</string>
+    <string name="url_3ms">http://3ms.huawei.com</string>
+    <string name="log_mail_to_address_hw">espace@huawei.com</string>
+    <string name="hw_appstore_address">http://appstore.huawei.com/app/C79477</string>
+    <string name="gp_appstore_address">https://play.google.com/store/apps/details?id=com.huawei.espacev2</string>
+    <string name="tup_encrypt_salt">aedkfjdiodiejjfk</string>
+    <string name="switch_fragment">//switchfragment</string>
+    <string name="privacy_statement_ch_url">file:///android_asset/privacystatementch.htm</string>
+    <string name="privacy_statement_eng_url">file:///android_asset/privacystatementeng.htm</string>
+    <string name="open_email_exchange">0</string>
+    <string name="open_lightapp_interface">0</string>
+
+    <string name="powered_by_huawei">Powered by Huawei</string>
+    <string name="i_media_engine">iMedia Engine</string>
+
+    <!-- server setting, for two pack -->
+    <!-- 0:not show it, 1:show it -->
+    <string name="show_server_setting">1</string>
+    <string name="login_default_address">uc.huawei.com</string>
+    <string name="login_default_port">7801</string>
+
+    <!-- 0:not used, 1:used -->
+    <string name="use_anyoffice_svn">0</string>
+    <string name="login_default_svn_address"> </string>
+    <string name="login_default_svn_port">443</string>
+
+    <!-- 0:not used, 1:used -->
+    <string name="use_anyoffice_sso">0</string>
+    <!-- 1:is for HWUC terminal, others : base network use -->
+    <string name="is_hwuc_terminal">0</string>
+
+</resources>

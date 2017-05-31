@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="logout_exit">
+        <item>注销</item>
+        <item>退出</item>
+    </string-array>
+    <string-array name="conf_time_picker">
+        <item>00分</item>
+        <item>10分</item>
+        <item>20分</item>
+        <item>30分</item>
+        <item>40分</item>
+        <item>50分</item>
+    </string-array>
+    <string-array name="conf_hour_picker">
+        <item>0小时</item>
+        <item>1小时</item>
+        <item>2小时</item>
+        <item>3小时</item>
+        <item>4小时</item>
+        <item>5小时</item>
+        <item>6小时</item>
+        <item>7小时</item>
+        <item>8小时</item>
+        <item>9小时</item>
+        <item>10小时</item>
+        <item>11小时</item>
+        <item>12小时</item>
+    </string-array>
+    <string-array name="autoanswer_second_picker">
+        <item>01秒</item>
+        <item>02秒</item>
+        <item>03秒</item>
+        <item>04秒</item>
+        <item>05秒</item>
+        <item>06秒</item>
+        <item>07秒</item>
+        <item>08秒</item>
+        <item>09秒</item>
+        <item>10秒</item>
+        <item>11秒</item>
+        <item>12秒</item>
+        <item>13秒</item>
+        <item>14秒</item>
+        <item>15秒</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/contact_head"
+        android:layout_width="53.33dp"
+        android:layout_height="53.33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="6.67dp"
+        android:layout_marginTop="6.67dp"
+        android:duplicateParentState="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6.67dp"
+        android:singleLine="true"
+        android:textColor="@color/textThirdly" />
+
+    <ImageView
+        android:id="@+id/delete_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:duplicateParentState="true"
+        android:src="@drawable/member_delete_selector"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/cancel_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contact_head"
+        android:layout_alignRight="@+id/contact_head"
+        android:duplicateParentState="true"
+        android:src="@drawable/icon_add_cancel_selector"
+        android:visibility="gone" />
+
+</RelativeLayout>

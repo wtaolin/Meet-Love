@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:id="@+id/title_layout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/title"/>
+    </RelativeLayout>
+    
+    <!-- audio hint -->
+
+    <LinearLayout
+        android:id="@+id/audio_hint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/title_layout"
+        android:background="@color/main_conf_item_red"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/prompt_cancel_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/slip_out_to_cancel_send"
+            android:textColor="@color/white"
+            android:textSize="14.66sp" />
+
+        <TextView
+            android:id="@+id/prompt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button 
+        android:id="@+id/btn_get_history_msg"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/title_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/chat_item_date_bg"
+        android:gravity="center"
+        android:textColor="@color/textPrimary"
+        android:textSize="12sp"
+        android:text="@string/get_history_msg"
+        />
+    
+    
+    <ListView
+        android:id="@+id/list_im"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_get_history_msg" 
+        android:layout_above="@+id/chat_bottom_area">
+
+    </ListView>
+
+    <!-- buttom more btns opts -->
+
+    <RelativeLayout
+        android:id="@+id/more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone" >
+        
+        <GridView
+            android:id="@+id/grid_more_opts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:visibility="gone" />
+        
+        <com.huawei.esdk.uc.widget.SoundWaveView
+            android:id="@+id/record_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/btn_say_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="9.3dp"
+                android:layout_marginTop="9.3dp"
+                android:background="@drawable/voice_input_selector"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/speak_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/audio_record_begin"
+                android:textSize="14.66sp" />
+        </com.huawei.esdk.uc.widget.SoundWaveView>
+        
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:id="@+id/chat_bottom_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/department_title_bg"
+        android:layout_above="@id/more_layout"
+        android:orientation="horizontal"
+         >
+        
+        <include layout="@layout/chat_bottom" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btn_sent"
+            android:background="@drawable/bg_corner_circle_internal_shadow" 
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_sent"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/net_bt_bac"
+            android:text="@string/btn_send" 
+            android:visibility="gone"/>
+    </FrameLayout>
+    
+
+</RelativeLayout>

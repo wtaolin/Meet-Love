@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+    <ImageView
+            android:id="@+id/defaultImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/circle_pic_default_small"
+            android:background="@drawable/pic_select_bg"
+            android:layout_alignBottom="@+id/img_view"
+            android:layout_alignTop="@+id/img_view"
+            android:layout_alignLeft="@+id/img_view"
+            android:layout_alignRight="@+id/img_view"
+            />
+
+    <com.huawei.esdk.uc.widget.CubicImageView
+            android:id="@+id/img_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            />
+
+    <ImageView
+            android:id="@+id/take_photo"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/camera_normal"
+            android:visibility="gone"/>
+
+    <ImageView
+            android:id="@+id/video_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:src="@drawable/video_play_small_selector"
+            android:visibility="gone"/>
+
+    <ImageView
+            android:id="@+id/select_img_background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:duplicateParentState="true"
+            android:layout_alignBottom="@+id/img_view"
+            android:layout_alignTop="@+id/img_view"
+            android:layout_alignLeft="@+id/img_view"
+            android:layout_alignRight="@+id/img_view"
+            android:background="@drawable/pic_selector"/>
+
+    <RelativeLayout
+            android:id="@+id/select_layout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+        <ImageView
+                android:id="@+id/select"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/pic_select_normal"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

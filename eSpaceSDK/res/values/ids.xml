@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="empty_iv" type="id"/>
+    <item name="empty_tv" type="id"/>
+
+    <item name="title_layout" type="id"/>
+    <item name="blog_area" type="id"/>
+
+    <item name="slave_button" type="id"/>
+    <item name="opt_button" type="id"/>
+    <!-- 自动化测试使用，最近记录项统一ID -->
+    <item name="recentItemArea" type="id"/>
+    <item name="swipeArea" type="id"/>
+    <item name="fitArea" type="id"/>
+</resources>

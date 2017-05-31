@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_common"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:orientation="vertical" >
+
+            <!-- 现在 -->
+
+            <RelativeLayout
+                android:id="@+id/conference_subject_view"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="4dp" >
+
+                <TextView
+                    android:id="@+id/meeting_subject_tag"
+                    android:layout_width="70dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="19dp"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/conf_create_init_time"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/isNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/pickers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="19dp"
+                    android:gravity="right|center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/begin_time"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#7f7f7f7f"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <!-- Date -->
+
+                    <NumberPicker
+                        android:id="@+id/dayofyear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <!-- Hour -->
+
+                    <NumberPicker
+                        android:id="@+id/hourofday"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <!-- Minute -->
+
+                    <NumberPicker
+                        android:id="@+id/minuteofhour"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="19dp"
+                    android:gravity="right|center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/conference_time_length"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#7f7f7f7f"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <NumberPicker
+                        android:id="@+id/lenghofhour"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <NumberPicker
+                        android:id="@+id/lenghofminute"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_cancel" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_sure" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huawei.esdk.uc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- camera permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.front" />
+
+    <uses-permission android:name="com.huawei.eSpaceMobileApp" />
+
+<!--    <permission
+        android:name="com.huawei.eSpaceMobileApp"
+        android:protectionLevel="normal" />   -->
+
+    <application
+        android:name="com.huawei.esdk.uc.application.UCAPIApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ucapi_it"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        >
+        <activity
+            android:name="com.huawei.esdk.uc.login.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.login.NetWorkSetActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity><activity
+        android:name="com.huawei.esdk.uc.MainActivityOld"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" >
+    </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.SetActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.group.GroupMemberAddActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.im.ChatActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="com.huawei.eSpaceMobileApp.im.IMPS.ITEM"/>
+
+                <category android:name="com.huawei.eSpaceMobileApp.im.IMPS_CATEGORY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <!-- by lwx302895 防止p7点击推送通知跳转不到应用中-->
+                <category android:name="com.huawei.eSpaceMobileApp.notify.SYSTEM_CATEGORY" />
+                <!-- by lwx302895 end -->
+
+                <data android:scheme="account"/>
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.call.MediaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.call.VideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.group.GroupDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.conf.ConfCreateActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.conf.ConferenceAddMemberActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.conf.ConferenceDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.huawei.esdk.uc.PushActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/transparent_theme">
+            <intent-filter>
+                <action android:name="com.huawei.ucapi.pushNotify"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.huawei.ucapi.pushCategory"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huawei.esdk.uc.conf.ConferenceManageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.huawei.esdk.uc.im.PictureMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.huawei.esdk.uc.im.PictureScanActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.huawei.esdk.uc.im.PicturePreviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.huawei.esdk.uc.im.ShowAllPicActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.huawei.esdk.uc.im.VideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.huawei.esdk.uc.im.VideoRecorderActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.huawei.esdk.uc.contact.ContactDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".FakeVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".InteractVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.huawei.service.EspaceService" />
+        <service android:name="com.huawei.esdk.uc.UCAPIService" />
+    </application>
+</manifest>

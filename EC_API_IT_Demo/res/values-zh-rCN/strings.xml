@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">MeetLove</string>
+    <string name="androidversion">V2.5.0</string>
+    
+    <string name="hw_copy_right">版权所有©华为技术有限公司1999-2015。保留一切权利。</string>
+
+    <string name="btn_cancel">取消</string>
+    <string name="btn_send">发送</string>
+    <string name="btn_create">创建</string>
+    <string name="btn_done">完成</string>
+    <string name="btn_sure">确定</string>
+    
+    <string name="account">帐号</string>
+    <string name="password">密码</string>
+    <string name="login">登 录</string>
+    <string name="logout">登出</string>
+    <string name="create_discuss">新建讨论组</string>
+    <string name="label_back">返回</string>
+    <string name="label_refresh">刷新</string>
+    <string name="label_logout_success">已注销！</string>
+    
+    <string name="account_login_otherplace">您的帐号已在别处登录</string>
+    <string name="login_3g_disabled">请连接Wi-Fi网络使用eSpace</string>
+    <string name="uc_login_right_limit_android">非常抱歉，此版本暂不适用于贵公司员工日常使用，请到Google Play, AppChina, or Huawei Hispace下载贵公司正式版本</string>
+    <string name="request_failed">请求失败</string>
+    <string name="etimeout">超时，请检查网络</string>
+    <string name="request_error">发送请求错误</string>
+    <string name="has_logined_error">已登录</string>
+    <string name="connect_error">连接服务器失败，请检查网络设置</string>
+    <string name="login_on_pc_desc">该帐号已在pc登录，是否切换到当前终端登录</string>
+    <string name="login_on_mobile_desc">该帐号已在mobile登录，是否切换到当前终端登录</string>
+    <string name="login_on_web_desc">该帐号已在web登录，是否切换到当前终端登录</string>
+    <string name="login_on_pad_desc">该帐号已在pad登录，是否切换到当前终端登录</string>
+    <string name="login_on_ipphone_desc">该帐号已在ipphone登录，是否切换到当前终端登录</string>
+    <string name="suretologout">您确定要登出吗?</string>
+    
+    <string name="network_setting">服务器设置</string>
+    <string name="address">地址</string>
+    <string name="iphint">www.yourcompany.com</string>
+    <string name="port">端口</string>
+    <string name="svncheck">安全网关接入</string>
+    <string name="svngate">安全网关</string>
+    <string name="svnport">安全网关端口</string>
+    <string name="svngateaccount">安全网关帐号</string>
+    <string name="svngatepass">安全网关密码</string>
+    <string name="serverblank">服务器地址不能为空</string>
+    <string name="portblank">端口号不能为空</string>
+    <string name="net_address_format_error">服务器地址格式不正确</string>
+    <string name="net_port_error">服务器端口号范围：1~65535</string>
+    <string name="svn_address_format_error">安全网关地址格式不正确</string>
+    <string name="svn_port_error">安全网关端口号范围:1~65535</string>
+    <string name="svnipblank">安全网关地址不能为空</string>
+    <string name="svnportblank">安全网关端口号不能为空</string>
+    <string name="svn_account_empty_prompt">安全网关帐号不能为空</string>
+    <string name="svn_pwd_empty_prompt">安全网关密码不能为空</string>
+    
+    <string name="online">在线</string>
+    <string name="busy">忙碌</string>
+    <string name="away">离开</string>
+    
+    <string name="personal_setting">个人设置</string>
+    <string name="call_mode">呼叫方式</string>
+    <string name="call_setting_ctd">CTD</string>
+    <string name="call_setting_voip">VoIP</string>
+    <string name="call_setting_callback_number">回呼号码</string>
+    
+    <string name="media_video">视频</string>
+    <string name="call_refuse">拒绝</string>
+    <string name="call_sure">接受</string>
+    <string name="call_voip_fail">呼叫失败</string>
+    <string name="call_down">结束通话</string>
+    <string name="video_invite">是否同意对方升级为视频通话？</string>
+    <string name="agree">同意</string>
+    <string name="sure_video_remove">确定移除视频通话？</string>
+    <string name="tip_taking">已有通话在进行!</string>
+    
+    
+    <string name="search_contact">搜索</string>
+    <string name="searchfromenterprise">从企业通讯录中查找</string>
+    
+    <string name="conf_create">创建会议</string>
+    <string name="subject">会议主题</string>
+    <string name="conf_create_init_subject_suffix">%s的会议</string>
+    <string name="tap_input_theme">点击输入会议主题</string>
+    <string name="members_number">与会号码</string>
+    <string name="conference_time">会议时间</string>
+    <!-- <string name="conference_time_length">会议时长</string> -->
+    <string name="conference_time_length">结束时间</string>
+    <string name="conference_type">会议类型</string>
+    <string name="conf_create_init_time">现在</string>
+    <string name="conference_call">语音会议</string>
+    <string name="conference_members">与会者</string>
+    <string name="begin_time">开始时间</string>
+    <string name="conf_access_code">接入码</string>
+    <string name="conf_access_pwd">会议接入密码</string>
+    <string name="Moderator">主持人</string>
+    <string name="conf_detail_btn_cancel_book">取消会议</string>
+    <string name="conf_detail_btn_end">会议已结束</string>
+    <string name="conf_detail_cancel_book_prompt">您确定取消预约会议吗?</string>
+    <string name="prompt_exit_conf">退出会议</string>
+    <string name="prompt_over_conf">结束会议</string>
+    <string name="join_conference">加入会议</string>
+    <string name="delete">删除</string>
+    <string name="enter_meeting_noright_tip">您尚未开通VoIP权限，无法使用用户号码加入会议</string>
+    <string name="enter_meeting_nowifi_tip">非Wi-Fi网络下，暂不支持VoIP语音及多媒体会议</string>
+    <string name="conf_member_add">正在加入…</string>
+    <string name="caller_ctc_quit">您确定结束会议吗?</string>
+    <string name="conf_detail_btn_cancel_prompt">正在取消…</string>
+    <string name="hangup">请出会议</string>
+    <string name="Join">重新邀请</string>
+    <string name="create_fail">创建会议失败。</string>
+    <string name="conf_end">已结束会议</string>
+
+    <string name="module_error_1">通用错误</string>
+    <string name="module_error_2">会话超时</string>
+    <string name="module_error_4">终端请求消息异常</string>
+    <string name="module_error_5">服务器忙，请稍后再试</string>
+    <string name="module_error_6">您的帐号在别处登录</string>
+    <string name="module_error_7">请求页数错误</string>
+    <string name="module_error_8">消息服务不存在</string>
+    <string name="module_error_9">长时间与服务器失去联系，请重新登录</string>
+    <string name="module_error_10">您的帐号未开通eSpace Mobile权限</string>
+    <string name="module_error_11">设备号错误</string>
+    <string name="module_error_20">入会失败</string>
+    <string name="module_error_30">会议不存在</string>
+    <string name="module_error_31">与会人邀请失败</string>
+    <string name="module_error_35">与会人不在会议中</string>
+    <string name="module_error_43">无需修改话语权</string>
+    <string name="module_error_50">MAA地址错误</string>
+    
+    <string name="all_contacts">全部联系人</string>
+	<string name="cancel">取消</string>
+	<string name="edit">编辑</string>
+	<string name="discussion_name">讨论组名称</string>
+	<string name="group_announce">公告</string>
+	<string name="group_announce_null">无公告</string>
+	<string name="group_info">简介</string>
+	<string name="group_info_null">无简介</string>
+	<string name="discussion_exit">退出</string>
+    <string name="discussion_save_to_contacts">保存到通讯录</string>
+    <string name="group_name">群名称</string>
+    
+    <string name="me">我</string>
+    <string name="conf_list_all">全部会议</string>
+    
+    <string name="get_history_msg">点击获取历史记录</string>
+    
+    <string name="save_account">保存账号密码</string>
+
+    <string name="media_symbol">...</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="hwpush_NoActionBar" parent="android:Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/e_scrollbar</item>
+    </style>
+    
+</resources>

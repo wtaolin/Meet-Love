@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_main">#838a91</color>
+     
+    <color name="transparent_background">#00000000</color>
+    <color name="reconnect_background">#57b7dc</color>
+    <drawable name="halftranslucent">#70000000</drawable>
+    <drawable name="black">#f000</drawable>
+    <drawable name="translucent">#00000000</drawable>
+    <drawable name="login_txt_bg">#f3f2ef</drawable>
+    <drawable name="contact_button_normal">#666666</drawable>
+    <drawable name="contact_button_press">#FFFFFF</drawable>
+    <drawable name="item_click_drawable">#57b7dc</drawable>
+    <drawable name="item_background_drawable">#f2f4f5</drawable>
+    <drawable name="text_enable_color">#999999</drawable>
+    
+    <!-- <color name="white">#FFFF</color> -->
+    <color name="cwhite">#ccc</color>
+    <color name="prompt_gray">#666666</color>
+    <color name="bg_common">#eaebec</color>
+    <color name="bwhite">#FFb5b5b5</color>
+    <color name="bgcolor">#FF79B30F</color>
+    <color name="gray">#ff4a4a4a</color>
+    <color name="black">#000000</color>
+    <color name="chatcolor">#73797B</color>
+    <color name="imtextowner">#0f8f06</color>
+    <color name="imextother">#26abbf</color>
+    <color name="settingColor">#4a4a4a</color>
+    <color name="bg">#353737</color>
+    <color name="bigbg">#FF464748</color>
+    <color name="divider">#D4D9DD</color>
+    <color name="halfblack">#77000000</color>
+    <color name="imothertitle">#ff0f8f06</color>
+    <color name="imminetitle">#ff26abbf</color>
+    <color name="imbody">#ff4a4a4a</color>
+    <color name="red">#ffff0000</color>
+    <color name="netcolor">#FFbebebe</color>
+    <color name="textunderline">#3579ce</color>
+    <color name="meetingbg">#ffeeeeee</color>
+    <color name="item_meeting">#ff487207</color>
+    <color name="item_othermeet_subject">#ff333333</color>
+    <color name="bg_dialog_window">#00333333</color>
+    <color name="item_othermeet_states">#ff999999</color>
+    <color name="item_click">#57b7dc</color>
+    <color name="item_background">#f2f4f5</color>
+    <color name="chat_background">#f2f4f5</color>
+    <color name = "text_blue">#00ccff</color>
+    <color name = "text_gray">#666666</color>
+    <color name = "text_dan">#999999</color>
+    <color name = "text_black">#373737</color>
+    <color name = "text_light_black">#a1a1a1</color>
+    <color name = "text_bg_gray">#f8f7f8</color>
+    <color name = "shad_view_color">#88000000</color>
+    
+    <color name = "text_chat_gray">#737373</color>
+    <color name = "text_chat_history">#28b0e2</color>
+    <color name = "dial_num">#000000</color>
+    <color name = "dial_letter">#737373</color>
+    <color name = "search_result_item_one">#ffffffff</color>
+    <color name = "search_result_item_two">#fff3f3f3</color>
+    <color name = "dial_bg_gray">#cccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_az">#F999</color>
+    <color name="az_text_pressed">#FF48C9FF</color>
+    <color name="chat_item_tag">#FF999999</color>
+    <color name="chat_item_bg_a">#f2f4f5</color>
+    <color name="chat_item_bg_b">#ededed</color>
+    <color name="chat_item_content">#262626</color>
+    <color name="text_side_bar">#666666</color>
+    <color name="personal_signature_bg">#57B7DC</color>
+    
+    <color name="label_background">#DBDBDB</color>
+    
+    <color name="calllog_text_color">#666666</color>
+    <color name="conversation_text_color">#999999</color>
+    <color name="conversation_name_color">#333333</color>
+    <color name="main_conf_item_white">#FFFFFF</color>
+    <color name="main_conf_item_end_color">#666666</color>
+    <color name="main_conf_item_red">#9fd519</color>
+    <color name="main_conf_item_red_click">#b73022</color>
+    <color name="main_conf_item_gray">#868686</color>
+    <color name="main_conf_item_gray_click">#727272</color>
+    <color name="main_conf_item_black">#4d4d4d</color>
+    <color name="main_conf_item_black_click">#424242</color>
+    <color name="recent_hide_item_text">#57b7dc</color>
+    <color name="bulletin_item_bg">#f2f4f5</color>
+    <color name="more_sign_color">#f888</color>
+    <color name="conf_manager_bg">#394a52</color>
+    <color name="team_item_bg_press">#42535b</color>
+    <color name="welcome_accountinfo_text">#cccccc</color>
+    <color name="chat_word_cout">#f57e6b</color>
+    
+    <!-- xuweijuan -->
+    <color name="conf_manager_list_line">#545454</color>
+        <color name="conf_end_list_txt">#444444</color>
+        
+    <color name="sketch_font_background">#00FFFFFF</color>
+    <color name="sketch_color_black">#000000</color>
+    <color name="sketch_color_purple">#9E0BEA</color>
+    <color name="sketch_color_blue">#100BEA</color>
+    <color name="sketch_color_skyblue">#0BAEEA</color>
+    <color name="sketch_color_green">#64EA0B</color>
+    <color name="sketch_color_yellow">#EAB80B</color>
+    <color name="sketch_color_red">#EA3C0B</color>
+    
+    <color name="secondary">#628DC7</color>
+    <color name="textThirdly">#666666</color>
+    <color name="textSecondary">#999999</color>
+</resources>

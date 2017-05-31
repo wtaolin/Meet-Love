@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/condition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/search"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/search"
+            android:background="@drawable/bg_corner_circle_internal_shadow"
+            android:hint="@string/searchfromenterprise"
+            android:paddingRight="5dp"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/condition"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/login_clear_username"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/net_bt_bac"
+            android:text="@string/search_contact" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

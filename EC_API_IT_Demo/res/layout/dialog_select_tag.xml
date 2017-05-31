@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:layout_width="298.7dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_bg_all_normal"
+            android:orientation="vertical">
+
+        <TextView style="@style/title_dialog_style"
+                  android:id="@+id/dialog_header"
+                  android:text="@string/select_group_tag"/>
+
+        <include layout="@layout/dialog_title_content_divider"></include>
+
+        <RelativeLayout
+                android:id="@+id/dialog_add_text_layout"
+                android:layout_width="fill_parent"
+                android:visibility="visible"
+                android:layout_marginLeft="20dp"
+                android:layout_height="40dp">
+            <TextView
+                    android:id="@+id/dialog_add_text"
+                    android:hint="@string/new_label"
+                    android:singleLine="true"
+                    android:maxLength="50"
+                    android:paddingRight="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_toLeftOf="@+id/dialog_add_group_iv"
+                    android:textColor="@color/textSecondary"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center"
+                    android:layout_height="36.5dp"
+                    android:textSize="18sp"></TextView>
+            <ImageView
+                    android:id="@+id/dialog_add_group_iv"
+                    android:layout_height="22dp"
+                    android:background="@drawable/edit_signature_selector"
+                    android:layout_width="22dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/dialog_add_fri_layout"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="36.5dp">
+            <EditText
+                    android:id="@+id/dialog_add_edit"
+                    android:hint="@string/input_name"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:paddingRight="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_toLeftOf="@+id/dialog_add_iv_clear"
+                    android:background="@color/dial_bg_white"
+                    android:textColor="@color/textPrimary"
+                    android:layout_height="36.5dp"
+                    android:textSize="18sp"></EditText>
+            <ImageView
+                    android:id="@+id/dialog_add_iv_clear"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/icon_search_delete_click"
+                    android:layout_width="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="center"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone"></ImageView>
+        </RelativeLayout>
+        <include layout="@layout/dialog_content_divider_hor"></include>
+        <ListView
+                android:id="@+id/dialog_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/dial_bg_gray"
+                android:dividerHeight="@dimen/dividerHeight"
+                android:fadingEdge="none"
+                android:listSelector="@drawable/bg_dialog_selector"
+                android:scrollbars="none">
+        </ListView>
+
+        <include layout="@layout/dialog_content_divider_hor"></include>
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="45dp"
+                      android:orientation="horizontal">
+            <Button style="@style/btn_dialog_style"
+                    android:text="@string/btn_cancel"
+                    android:id="@+id/dialog_leftbutton"
+                    />
+            <include layout="@layout/dialog_content_divider_ver"></include>
+            <Button android:text="@string/btn_sure"
+                    style="@style/btn_dialog_style"
+                    android:id="@+id/dialog_rightbutton"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

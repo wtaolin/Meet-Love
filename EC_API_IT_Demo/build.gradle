@@ -1,0 +1,162 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+    }
+}
+
+apply plugin: 'android'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile project(':eSpaceSDK')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile ('com.microsoft.projectoxford:face:1.0.0') {
+        exclude module: 'gson'
+    }
+    compile project(':openCVLibrary310')
+
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+	
+		signingConfigs {
+        myConfig{
+            storeFile file("keystore/uc_control.keystore")
+            storePassword "123456"
+            keyAlias "uc_control.keystore"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig  signingConfigs.myConfig
+            proguardFile 'proguard-android.txt'
+
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    defaultConfig {
+        multiDexEnabled true
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "1g"
+    }
+	lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+defaultTasks 'clean','copyapidemo','copybale','copysdk','buildGradle','apkzip','projectzip','copyzip','removezip','clean'
+
+def apiDemo = fileTree(dir:'../../../../../../UC_API_IT_Demo',include:['**/*'])
+def zipList = fileTree(dir:'../../../../../../UC_API_IT_Demo_Release',include:['*.zip'])
+def removeZip = fileTree(dir:'.',include:['*.zip'])
+
+task clean(type:Delete){
+	delete apiDemo
+	delete zipList
+}
+
+task copyapidemo(type:Copy){
+	print('copyapidemo exec ')
+	from('.')
+	include('keystore/*.keystore')
+	include('libs/**/*')
+	include('res/**/*')
+	include('src/**/*')
+	include('AndroidManifest.xml')
+	include('*.gradle')
+	include('*.properties')
+	include('*.txt')
+	
+	into('../../../../../../UC_API_IT_Demo/UC_API_IT_Demo')
+}
+
+task copybale(type:Copy){
+	from('bale')
+	include('*.gradle')
+	include('*.properties')
+	
+	into('../../../../../../UC_API_IT_Demo')
+}
+
+task copysdk(type:Copy){
+	print('copysdk exec ')
+	from('../../../../../platform/Mobile/Android/eSpaceSDK')
+	
+	include('.idea/**/*')
+	include('gen/**/*')
+	include('out/**/*')
+	include('innerlib/**/*')
+	include('libs/**/*')
+	include('open_src/**/*')
+	include('platform/**/*')
+	include('res/**/*')
+	include('AndroidManifest.xml')
+	include('*.gradle')
+    include('*.properties')
+    include('*.txt')
+	
+	into('../../../../../../UC_API_IT_Demo/eSpaceSDK')
+}
+
+task buildGradle(type:GradleBuild){
+	buildFile = '../../../../../../UC_API_IT_Demo/build.gradle'
+	tasks = ['assemble']
+}
+
+task projectzip(type:GradleBuild){
+	buildFile = '../../../../../../UC_API_IT_Demo/build.gradle'
+	tasks = ['zipproject']
+}
+
+task apkzip(type:GradleBuild){
+	buildFile = '../../../../../../UC_API_IT_Demo/build.gradle'
+	tasks = ['zipapk']
+}
+
+task copyzip(type:Copy){
+	from('.')
+	include('*.zip')
+	into('../../../../../UCBuild_Android')
+}
+
+task removezip(type:Delete){
+	delete removeZip
+}
+
+
+

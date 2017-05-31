@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" android:layout_height="fill_parent"
+              android:orientation="vertical">
+    <LinearLayout android:id="@+id/dialog_title_item_ll"
+                  android:layout_width="fill_parent" android:layout_height="40dp"
+                  android:gravity="center_vertical|center_horizontal">
+        <LinearLayout android:layout_height="fill_parent"
+                      android:id="@+id/linearLayout2" android:gravity="right|center_vertical"
+                      android:layout_width="0dp" android:layout_weight="0.4">
+            <TextView android:layout_height="wrap_content"
+                      android:text="移动电话"
+                      android:textColor="@color/textPrimary"
+                      android:textSize="13dp"
+                      android:id="@+id/select_cantact_dialog_name"
+                      android:gravity="right"
+                      android:layout_width="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout android:layout_height="fill_parent"
+                      android:id="@+id/linearLayout3" android:orientation="vertical"
+                      android:gravity="left|center_vertical" android:layout_width="0dp" android:layout_weight="0.6">
+            <TextView android:layout_height="wrap_content"
+                      android:text="18600001111"
+                      android:textColor="@color/textPrimary"
+                      android:textSize="13dp"
+                      android:id="@+id/select_contact_dialog_number"
+                      android:layout_width="wrap_content"
+                      android:layout_marginLeft="10dp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

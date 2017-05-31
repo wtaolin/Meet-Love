@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/root"
+        android:background="@color/black">
+
+    <SurfaceView
+            android:id="@+id/record_surface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+    <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="33.33dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="6.67dp"
+            android:layout_marginRight="6.67dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@drawable/cornor_time_background"
+            android:gravity="center_vertical">
+
+        <ImageView
+                android:id="@+id/rad"
+                android:src="@drawable/camera_rad"
+                android:scaleType="centerInside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6.67dp"
+                />
+
+        <TextView
+                android:id="@+id/record_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="00:00"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/switch_camera"
+            android:layout_marginTop="6.67dp"
+            android:layout_marginLeft="13.33dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera_change_selector"
+            android:background="@drawable/cornor_time_background"
+            />
+
+    <ImageView
+            android:id="@+id/record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/camera_player_selector"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/mlayout"/>
+
+    <View
+            android:layout_alignParentBottom="true"
+            android:id="@+id/mlayout"
+            android:visibility="invisible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"></View>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+include ':EC_API_IT_Demo'
+include ':eSpaceSDK'
+project(':eSpaceSDK').projectDir = new File(settingsDir,'../../../../../platform/Mobile/Android/eSpaceSDK')
+

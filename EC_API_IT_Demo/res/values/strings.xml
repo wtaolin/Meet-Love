@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">MeetLove</string>
+    <string name="androidversion">V2.5.0</string>
+    
+    <string name="hw_copy_right">Copyright © Huawei Technologies Co., Ltd. 1998-2014. All rights reserved.</string>
+
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_create">Create</string>
+    <string name="btn_done">Finish</string>
+    <string name="btn_sure">OK</string>
+    <string name="save_account">Remember</string>
+    <string name="account">Account</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="create_discuss">create discuss group</string>
+    <string name="label_back">Back</string>
+    <string name="label_refresh">Refresh</string>
+    <string name="label_logout_success">Logout Success!</string>
+    
+    <string name="account_login_otherplace">Your account has logged in somewhere else.</string>
+    <string name="login_3g_disabled">Use the Wi-Fi network to access the eSpace.</string>
+    <string name="uc_login_right_limit_android">Sorry,this version is not for your enterprise. Please download the version for your enterprise from Google Play, AppChina, or Huawei Hispace.</string>
+    <string name="request_failed">Request failure</string>
+    <string name="etimeout">Network connection timed out. Check your network settings</string>
+    <string name="request_error">An error in sending a request.</string>
+    <string name="has_logined_error">Has logged in</string>
+    <string name="connect_error">Server connection failure. Check the network settings.</string>
+    <string name="login_on_pc_desc">This account has logged in to a PC client. Log in from the current terminal?</string>
+    <string name="login_on_mobile_desc">This account has logged in to a mobile client. Log in from the current terminal?</string>
+    <string name="login_on_web_desc">This account has logged in to a web client. Log in from the current terminal?</string>
+    <string name="login_on_pad_desc">This account has logged in to a tablet client. Log in from the current terminal?</string>
+    <string name="login_on_ipphone_desc">This account has logged in to an IP phone client. Log in from the current terminal?</string>
+    <string name="suretologout">Are you sure logout?</string>
+    
+    <string name="network_setting">Server Settings</string>
+    <string name="address">Address</string>
+    <string name="iphint">www.yourcompany.com</string>
+    <string name="port">Port</string>
+    <string name="svncheck">Security Gateway Access</string>
+    <string name="svngate">Security Gateway</string>
+    <string name="svnport">Security Gateway Port</string>
+    <string name="svngateaccount">Security Gateway Account</string>
+    <string name="svngatepass">Security Gateway Password</string>
+    <string name="serverblank">The server IP address cannot be empty.</string>
+    <string name="portblank">The port number cannot be empty.</string>
+    <string name="net_address_format_error">Incorrect server IP address format.</string>
+    <string name="net_port_error">Server port range: 1-65535.</string>
+    <string name="svn_address_format_error">Incorrect security gateway address format.</string>
+    <string name="svn_port_error">Security gateway port range: 1-65535.</string>
+    <string name="svnipblank">The security gateway IP address cannot be empty.</string>
+    <string name="svnportblank">The security gateway port number cannot be empty.</string>
+    <string name="svn_account_empty_prompt">The security gateway account cannot be empty.</string>
+    <string name="svn_pwd_empty_prompt">The security gateway password cannot be empty.</string>
+    
+    <string name="online">Online</string>
+    <string name="busy">Busy</string>
+    <string name="away">Away</string>
+    
+    <string name="personal_setting">My Settings</string>
+    <string name="call_mode">Call Mode</string>
+    <string name="call_setting_ctd">CTD</string>
+    <string name="call_setting_voip">VoIP</string>
+    <string name="call_setting_callback_number">Callback Number</string>
+    <string name="tip_taking">Has been conducting a call!</string>
+    
+    <string name="media_video">Video</string>
+    <string name="call_refuse">Reject</string>
+    <string name="call_sure">Accept</string>
+    <string name="call_voip_fail">Failed to make the call</string>
+    <string name="call_down">End Call</string>
+    <string name="video_invite">Agree with the other party to upgrade to a video call?</string>
+    <string name="agree">Agree</string>
+    <string name="sure_video_remove">Are you sure you want to remove the video call?</string>
+    
+    <string name="search_contact">Search</string>
+    <string name="searchfromenterprise">Search</string>
+    
+    <string name="conf_create">Create Meeting</string>
+    <string name="subject">Subject</string>
+    <string name="conf_create_init_subject_suffix">%s\'s meeting</string>
+    <string name="tap_input_theme">Click to add subject</string>
+    <string name="members_number">Access \nNO.</string>
+    <string name="conference_time">Duration</string>
+<!--     <string name="conference_time_length">Duration</string> -->
+    <string name="conference_time_length">End \nTime</string>
+    <string name="conference_type">Type</string>
+    <string name="conf_create_init_time">Now</string>
+    <string name="conference_call">Voice Meeting</string>
+    <string name="conference_members">Attendee</string>
+    <string name="begin_time">Start \nTime</string>
+    <string name="conf_access_code">Access Code</string>
+    <string name="conf_access_pwd">Access Password</string>
+    <string name="Moderator">Moderator</string>
+    <string name="conf_detail_btn_cancel_book">Cancel Meeting</string>
+    <string name="conf_detail_btn_end">The meeting has ended.</string>
+    <string name="conf_detail_cancel_book_prompt">Cancel the scheduled meeting?</string>
+    <string name="prompt_exit_conf">Exit Meeting</string>
+    <string name="prompt_over_conf">End Meeting</string>
+    <string name="join_conference">Join Meeting</string>
+    <string name="delete">Delete</string>
+    <string name="enter_meeting_noright_tip">You do not have the VoIP right and cannot join the meeting using the user number.</string>
+    <string name="enter_meeting_nowifi_tip">VoIP and multimedia meetings are supported only over Wi-Fi networks.</string>
+    <string name="conf_member_add">Joining…</string>
+    <string name="caller_ctc_quit">End the meeting?</string>
+    <string name="conf_detail_btn_cancel_prompt">Canceling…</string>
+    <string name="hangup">Remove Participant</string>
+    <string name="Join">Reinvite</string>
+    <string name="create_fail">Failed to create the meeting.</string>
+    <string name="conf_end">Ended Meetings</string>
+
+    <string name="module_error_1">General Error.</string>
+    <string name="module_error_2">Your session timed out.</string>
+    <string name="module_error_4">Terminal request error.</string>
+    <string name="module_error_5">The server is busy. Try again later.</string>
+    <string name="module_error_6">Your account has logged in somewhere else.</string>
+    <string name="module_error_7">Incorrect page number.</string>
+    <string name="module_error_8">The messaging service is unavailable.</string>
+    <string name="module_error_9">Disconnected from the server. Re-log in</string>
+    <string name="module_error_10">The eSpace mobile function is disabled.</string>
+    <string name="module_error_11">Device ID Error.</string>
+    <string name="module_error_20">Failed to join the meeting.</string>
+    <string name="module_error_30">The meeting does not exist.</string>
+    <string name="module_error_31">Failed to invite the participant.</string>
+    <string name="module_error_35">The participant is not in the meeting.</string>
+    <string name="module_error_43">The talk right does not need to be changed.</string>
+    <string name="module_error_50">Incorrect MAA address.</string>
+    
+    
+    <string name="all_contacts">All Contacts</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">edit</string>
+    <string name="discussion_name">Discussion Name</string>
+    <string name="group_announce">Bulletin</string>
+    <string name="group_announce_null">NO Bulletin</string>
+    <string name="group_info">Desc.</string>
+    <string name="group_info_null">NO Desc.</string>
+    <string name="discussion_exit">Exit</string>
+    <string name="discussion_save_to_contacts">Save to Contacts</string>
+    <string name="group_name">Group Name</string>
+    
+    <string name="me">me</string>
+    <string name="media_symbol">...</string>
+    
+    <string name="conf_list_all">All Conferences</string>
+    
+</resources>

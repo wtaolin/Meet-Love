@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- FloatingActionButton Style -->
+    <declare-styleable name="FloatingActionBtn">
+        <attr name="fabBg" format="reference|color"/>
+        <!--<attr name="fabBgNormal" format="reference|color"/>
+        <attr name="fabBgPressed" format="reference|color"/>
+        <attr name="fabBgDisabled" format="reference|color"/>-->
+
+        <!-- icon and margin for icon -->
+        <attr name="fabSrc" format="reference"/>
+        <attr name="fabLabel" format="reference"/>
+        <attr name="fabPadding" format="dimension"/>
+
+        <attr name="fabSize" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+
+        <attr name="fabShowStroke" format="boolean"/>
+    </declare-styleable>
+    <!-- FloatingActionButton Style -->
+</resources>

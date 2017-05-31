@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/btn_exitvideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:src="@drawable/media_exitvideo_select" />
+    
+    <ImageButton
+        android:id="@+id/btn_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:src="@drawable/media_switchvideo_select" />
+    
+    <ImageButton
+        android:id="@+id/btn_callkeeping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:src="@drawable/selector_icon_callkeep" />
+
+    <ImageButton
+        android:id="@+id/btn_mute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:src="@drawable/selector_icon_mute" />
+
+    <ImageButton
+        android:id="@+id/btn_loadvice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:src="@drawable/selector_icon_loadvoice" />
+
+    <ImageButton
+        android:id="@+id/btn_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:src="@drawable/selector_icon_video" />
+
+    <ImageButton
+        android:id="@+id/btn_dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:src="@drawable/selector_icon_calling" />
+    
+    <ImageButton
+        android:id="@+id/btn_hangup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:src="@drawable/media_exit_select" />
+
+</LinearLayout>

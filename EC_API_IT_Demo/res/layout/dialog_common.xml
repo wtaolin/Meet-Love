@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="303dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_message"
+        style="@style/dialog_text_new"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:lineSpacingExtra="6dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="17dip"
+        android:paddingRight="17dip" >
+
+        <Button
+            android:id="@+id/dialog_leftbutton"
+            style="@style/dialog_text_new"
+            android:layout_width="130dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_gray"
+            android:text="@string/btn_cancel" />
+
+        <Button
+            android:id="@+id/dialog_rightbutton"
+            style="@style/dialog_text_new"
+            android:layout_width="130dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_gray"
+            android:text="@string/btn_sure" />
+    </LinearLayout>
+
+</LinearLayout>

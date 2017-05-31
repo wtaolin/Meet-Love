@@ -1,0 +1,9 @@
+================================
+SVN_SDK
+版本:eSDK_UC_Control_V1.3.00_Android
+路径:\\nkgnas21a-rd\IT_VMP_NKG_43_F\PB21061943_eSDK UC V100R003C00B114\Software\TOSupportE\S
+================================
+TUP
+版本:V100R001C20SPC300B015
+路径:\\hghnas01a-rd\IT_VMP_HZ_15F\PB21329433_TUP V100R001C20SPC300B015\Software\service
+================================

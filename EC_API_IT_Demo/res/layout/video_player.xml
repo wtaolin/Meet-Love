@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rlRoot"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/bg_common">
+
+    <RelativeLayout android:id="@+id/rlPlayer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+        <SurfaceView android:id="@+id/svPlayer"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                />
+
+        <RelativeLayout android:id="@+id/rlPlayerStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/svPlayer"
+                        android:layout_alignLeft="@+id/svPlayer"
+                        android:layout_alignRight="@+id/svPlayer"
+                        android:layout_alignTop="@+id/svPlayer">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+        <include layout="@layout/um_load_source"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                />
+    </RelativeLayout>
+
+    <include android:id="@id/title_layout" layout="@layout/title"/>
+
+    <ImageView
+            android:id="@+id/play_btn_big"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/video_play_big_selector"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rlSeekBar"
+            android:layout_alignParentRight="true"
+            android:id="@+id/videoSize"
+            android:layout_marginRight="6.67dp"
+            android:layout_marginBottom="6.67dp"
+            android:layout_alignWithParentIfMissing="true"
+            android:textColor="@color/white"
+            android:text="0k"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:background="@drawable/cornor_time_background"
+            />
+
+    <RelativeLayout android:id="@+id/rlSeekBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="58dp"
+                    android:background="#767676"
+                    android:layout_alignParentBottom="true">
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_video_play_select"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/btn_play"
+                android:layout_centerVertical="true"/>
+
+        <TextView android:id="@+id/tvCurrTime"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:text="00:00"
+                  android:textColor="@color/white"
+                  android:textSize="13.3sp"
+                  android:layout_toRightOf="@+id/btn_play"/>
+
+        <ProgressBar android:id="@+id/sbVideo"
+                     android:layout_width="fill_parent"
+                     android:layout_height="8dp"
+                     android:layout_centerVertical="true"
+                     android:layout_marginLeft="2dp"
+                     android:layout_toLeftOf="@+id/tvTotalTime"
+                     android:layout_toRightOf="@+id/tvCurrTime"
+                     style="?android:attr/progressBarStyleHorizontal"
+                     android:progressDrawable="@drawable/um_player_seekbar"
+                     android:thumb="@null"/>
+
+        <TextView android:id="@+id/tvTotalTime"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="2dp"
+                  android:layout_marginRight="2dp"
+                  android:text="00:00"
+                  android:textColor="@color/white"
+                  android:textSize="13.3sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

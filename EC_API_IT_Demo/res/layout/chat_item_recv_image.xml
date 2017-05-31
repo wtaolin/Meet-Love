@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRoot"
+    style="@style/chat_item_root" >
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="5dp"
+        android:src="@drawable/ic_contact_normal_head" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/head"
+        android:padding="5dp"
+        android:text="name"
+        android:textColor="#77000000" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name"
+        android:padding="5dp"
+        android:text="14:20"
+        android:textColor="#77000000" />
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/head"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/framelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/framelayoutinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" >
+
+                <include
+                    android:id="@+id/chat_image"
+                    layout="@layout/chat_item_media_image" >
+                </include>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/background_bubble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/framelayoutinner"
+                android:layout_alignLeft="@+id/framelayoutinner"
+                android:layout_alignRight="@+id/framelayoutinner"
+                android:layout_alignTop="@+id/framelayoutinner"
+                android:background="@drawable/image_bg_left_selector"
+                android:duplicateParentState="true" />
+        </RelativeLayout>
+
+        <include layout="@layout/chat_item_recv_failtip" >
+        </include>
+    </LinearLayout>
+
+</RelativeLayout>

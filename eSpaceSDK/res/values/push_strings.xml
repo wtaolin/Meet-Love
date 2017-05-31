@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="push">eSpacePush</string>
+    <string name="pushService">PushService</string>
+    <string name="pushNotifyTitle">eSpace</string>
+    <string name="pushProcessName">com.huawei.push.PushService</string>
+</resources>

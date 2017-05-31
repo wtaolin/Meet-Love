@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chat_input_back"
+    android:gravity="center_vertical"
+    android:minHeight="55dp"
+    android:orientation="horizontal"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp" >
+
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="6.66dp"
+        android:background="@drawable/im_more_btn_selector" />
+
+    <RelativeLayout
+        android:id="@+id/txt_input_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="6.66dp"
+        android:layout_weight="1"
+        android:background="@drawable/chat_input_background_selector"
+        android:paddingRight="2dp" >
+
+        <ImageView
+            android:id="@+id/emotion_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/emotion_selector_input" />
+
+        <com.huawei.esdk.uc.widget.SpanPasteEditText
+            android:id="@+id/et_txt_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3.66dp"
+            android:layout_toLeftOf="@id/emotion_button"
+            android:background="@null"
+            android:hint=""
+            android:imeOptions="actionNext"
+            android:maxLines="4"
+            android:minHeight="38dp"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_leave_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/dial_bg_gray"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_chat_send"
+            android:layout_width="53.33dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/txt_leave_count"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/send_selector"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_audio_start"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/txt_leave_count"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6.6dp"
+            android:layout_marginRight="6.6dp"
+            android:background="@drawable/im_soft_mic_switch"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

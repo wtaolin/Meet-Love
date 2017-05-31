@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/department_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:minHeight="40dip"
+            android:text="@string/personal_setting"
+            android:textColor="#333333"
+            android:textSize="15sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/net_bt_bac"
+            android:gravity="center"
+            android:minWidth="61dip"
+            android:text="@string/btn_done"
+            android:textColor="#333333"
+            android:textSize="15sp" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/call_mode" />
+
+        <RadioGroup
+            android:id="@+id/group_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dp" >
+
+            <RadioButton
+                android:id="@+id/ctd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_setting_ctd"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/voip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_setting_voip"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/media_video"
+                android:textSize="10dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/call_setting_callback_number" />
+
+    <EditText
+        android:id="@+id/callbackNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_corner_circle_internal_shadow" />
+
+</LinearLayout>

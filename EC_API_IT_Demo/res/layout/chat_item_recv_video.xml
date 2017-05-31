@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRoot"
+    style="@style/chat_item_root" >
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="5dp"
+        android:src="@drawable/ic_contact_normal_head" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/head"
+        android:padding="5dp"
+        android:text="name"
+        android:textColor="#77000000" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name"
+        android:padding="5dp"
+        android:text="14:20"
+        android:textColor="#77000000" />
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/layout_chatter"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/head"
+        android:layout_below="@id/name"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/video_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/video_layout_inner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" >
+
+                <include layout="@layout/chat_item_media_video" >
+                </include>
+
+                <TextView
+                    android:id="@+id/item_video_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/thumbnail"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/thumbnail"
+                    android:background="@drawable/bg_photo_edit_personal_setting"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="20s"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10.6sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/background_bubble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/video_layout_inner"
+                android:layout_alignLeft="@+id/video_layout_inner"
+                android:layout_alignRight="@+id/video_layout_inner"
+                android:layout_alignTop="@+id/video_layout_inner"
+                android:background="@drawable/image_bg_left_selector"
+                android:duplicateParentState="true" />
+        </RelativeLayout>
+
+        <include layout="@layout/chat_item_recv_failtip" >
+        </include>
+    </LinearLayout>
+
+</RelativeLayout>

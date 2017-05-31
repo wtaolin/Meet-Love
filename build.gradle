@@ -1,0 +1,61 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+task zipproject(type:Zip){
+    print(' zipexec')
+    baseName = 'UC_API_IT_Demo'
+
+    from('.')
+    include('*.gradle')
+    include('*.properties')
+    include('*.bat')
+
+    include('UC_API_IT_Demo/keystore/*.keystore')
+    include('UC_API_IT_Demo/libs/**/*')
+    include('UC_API_IT_Demo/res/**/*')
+    include('UC_API_IT_Demo/src/**/*')
+    include('UC_API_IT_Demo/AndroidManifest.xml')
+    include('UC_API_IT_Demo/*.gradle')
+    include('UC_API_IT_Demo/*.properties')
+    include('UC_API_IT_Demo/*.txt')
+
+    include('eSpaceSDK/innerlib/**/*')
+    include('eSpaceSDK/libs/**/*')
+    include('eSpaceSDK/open_src/**/*')
+    include('eSpaceSDK/platform/**/*')
+    include('eSpaceSDK/res/**/*')
+    include('eSpaceSDK/src/**/*')
+    include('eSpaceSDK/AndroidManifest.xml')
+    include('eSpaceSDK/*.gradle')
+    include('eSpaceSDK/*.properties')
+    include('eSpaceSDK/*.txt')
+
+    into('UC_API_IT_Demo')
+
+}
+
+task zipapk(type: Zip){
+    baseName = 'UC_API_IT_DEMO_APK'
+
+    from('UC_API_IT_Demo/build/outputs/apk')
+	
+	include('*-release.apk')
+    //rename '(.+)-release(.+)','IM_Demo.apk'
+
+    //into('UC_API_DEMO_RELEASE_APK')
+	
+}

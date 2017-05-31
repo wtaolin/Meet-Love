@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/background_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageContent"
+        android:layout_alignLeft="@+id/imageContent"
+        android:layout_alignRight="@+id/imageContent"
+        android:layout_alignTop="@+id/imageContent"
+        android:background="@color/video_bg"
+        android:scaleType="centerInside"
+        android:src="@drawable/um_pic_normal"
+        android:visibility="gone" />
+
+    <!-- icon_commonfile_ul_normal -->
+
+    <com.huawei.esdk.uc.widget.CustomImageView
+        android:id="@+id/imageContent"
+        android:layout_width="@dimen/umPicWidth"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="173.33dp"
+        android:minHeight="86.67dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/um_pic_normal" />
+
+    <com.huawei.esdk.uc.widget.CircleProgressBar
+        android:id="@+id/upload_progressbar"
+        android:layout_width="53.33dp"
+        android:layout_height="53.33dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/play_btn"
+        android:layout_width="53.33dp"
+        android:layout_height="53.33dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+</merge>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.huawei.esdk.uc.widget.SlippingViewGroup
+        android:id="@+id/slippingGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/title" />
+
+    <com.huawei.esdk.uc.contact.SearchContactView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/title"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/a_title"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/a_title_left" />
+
+        <TextView
+            android:id="@+id/unread"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/a_title"
+            android:layout_alignTop="@+id/a_title"
+            android:padding="2dp"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/self_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/a_title"
+            android:src="@drawable/ic_self_normal_head" />
+
+        <ImageView
+            android:id="@+id/cur_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/self_head"
+            android:layout_alignRight="@+id/self_head"
+            android:src="@drawable/recent_offline_small" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/self_head"
+            android:padding="10dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/create_img"
+            android:background="@drawable/bg_icon_selector"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/create_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/setting_img"
+            android:background="@drawable/bg_icon_selector"
+            android:padding="15dp"
+            android:src="@drawable/icon_create" />
+
+        <ImageView
+            android:id="@+id/setting_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_icon_selector"
+            android:padding="15dp"
+            android:src="@drawable/ic_setting" />
+    </RelativeLayout>
+
+</RelativeLayout>

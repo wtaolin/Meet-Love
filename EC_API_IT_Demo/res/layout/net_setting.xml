@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ip_set_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/ip_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/address"
+        android:textColor="@color/netcolor"
+        android:textSize="13sp" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/ip_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_corner_circle_internal_shadow" >
+
+        <ImageView
+            android:id="@+id/ivClear_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/login_clear_username"
+            android:visibility="gone" >
+        </ImageView>
+
+        <EditText
+            android:id="@+id/ip_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ivClear_ip"
+            android:background="@android:color/transparent"
+            android:hint="@string/iphint"
+            android:maxLength="255"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textColor="@color/conversation_name_color"
+            android:textColorHint="#999999"
+            android:textSize="15sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/port_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/port"
+        android:textColor="@color/netcolor"
+        android:textSize="13sp" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/port_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_corner_circle_internal_shadow" >
+
+        <ImageView
+            android:id="@+id/ivClearPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/login_clear_username"
+            android:visibility="invisible" >
+        </ImageView>
+
+        <EditText
+            android:id="@+id/port_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ivClearPort"
+            android:background="@android:color/transparent"
+            android:hint="@string/port"
+            android:maxLength="5"
+            android:numeric="integer"
+            android:paddingLeft="10dip"
+            android:text="@string/port"
+            android:textColor="@color/conversation_name_color"
+            android:textColorHint="#999999"
+            android:textSize="15sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/svnchecklayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/svn_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/btn_square_unselected" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/svnchecktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/svncheck"
+            android:textColor="@color/text_gray" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/svnlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6.69"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/svn_gate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/svngate"
+            android:textColor="@color/netcolor"
+            android:textSize="13sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/svn_gate_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_corner_circle_internal_shadow" >
+
+            <ImageView
+                android:id="@+id/ivClear_Svngate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/login_clear_username"
+                android:visibility="visible" >
+            </ImageView>
+
+            <EditText
+                android:id="@+id/svn_gate_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ivClear_Svngate"
+                android:background="@android:color/transparent"
+                android:hint="@string/iphint"
+                android:maxLength="255"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColor="@color/conversation_name_color"
+                android:textColorHint="#999999"
+                android:textSize="15sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/svn_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/svnport"
+            android:textColor="@color/netcolor"
+            android:textSize="13sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/svn_port_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_corner_circle_internal_shadow" >
+
+            <ImageView
+                android:id="@+id/ivClear_svn_port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/login_clear_username"
+                android:visibility="visible" >
+            </ImageView>
+
+            <EditText
+                android:id="@+id/svn_port_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ivClear_svn_port"
+                android:background="@android:color/transparent"
+                android:hint="@string/svnport"
+                android:maxLength="5"
+                android:numeric="integer"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColor="@color/conversation_name_color"
+                android:textColorHint="#999999"
+                android:textSize="15sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/svnaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/account"
+            android:textSize="13sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/svn_account_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_corner_circle_internal_shadow" >
+
+            <ImageView
+                android:id="@+id/ivClear_svn_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/login_clear_username"
+                android:visibility="visible" >
+            </ImageView>
+
+            <EditText
+                android:id="@+id/account_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivClear_svn_account"
+                android:background="@android:color/transparent"
+                android:hint="@string/svngateaccount"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColor="@color/conversation_name_color"
+                android:textColorHint="#999999"
+                android:textSize="15sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/svnpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/password"
+            android:textSize="13sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/svn_pass_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_corner_circle_internal_shadow" >
+
+            <ImageView
+                android:id="@+id/ivClear_svn_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/login_clear_username"
+                android:visibility="visible" >
+            </ImageView>
+
+            <EditText
+                android:id="@+id/pass_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ivClear_svn_pass"
+                android:background="@android:color/transparent"
+                android:hint="@string/svngatepass"
+                android:maxLength="50"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColor="@color/conversation_name_color"
+                android:textColorHint="#999999"
+                android:textSize="15sp" >
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

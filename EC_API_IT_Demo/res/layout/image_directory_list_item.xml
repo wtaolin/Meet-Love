@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/imagelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/circle_pic_default_small"
+                android:background="@drawable/pic_select_bg"
+                android:layout_alignBottom="@+id/directory_recent_image"
+                android:layout_alignTop="@+id/directory_recent_image"
+                android:layout_alignLeft="@+id/directory_recent_image"
+                android:layout_alignRight="@+id/directory_recent_image"
+                />
+
+        <com.huawei.esdk.uc.widget.CubicImageView
+                android:id="@+id/directory_recent_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                />
+
+        <ImageView
+                android:id="@+id/take_photo"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/camera_normal"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/video_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
+                android:src="@drawable/video_play_small_selector"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:id="@+id/select_img_background"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:duplicateParentState="true"
+                android:layout_alignBottom="@+id/directory_recent_image"
+                android:layout_alignTop="@+id/directory_recent_image"
+                android:layout_alignLeft="@+id/directory_recent_image"
+                android:layout_alignRight="@+id/directory_recent_image"
+                android:background="@drawable/pic_selector"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <TextView
+                android:id="@+id/directory_name"
+                android:layout_width="wrap_content"
+                android:maxWidth="65dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/textPrimary"
+                android:singleLine="true" />
+
+        <TextView
+                android:id="@+id/directory_capacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textPrimary"
+                android:textSize="14sp"
+                android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

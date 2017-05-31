@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:paddingRight="14dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="13dp"
+            android:background="@drawable/pop_bg_all_normal"
+            android:paddingLeft="14dp">
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+            <ProgressBar
+                    android:id="@+id/dialog_progressbar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="3dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:indeterminateDrawable="@drawable/bar_anim" android:indeterminate="false"/>
+            <TextView
+                    android:id="@+id/dialog_message"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimary"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="4dp"
+                    android:maxLines="4"
+                    android:maxWidth="145dp">
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_common"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/department_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:singleLine="true"
+            android:text="@string/conf_create"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/conference_create_btn_send"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/net_bt_bac"
+            android:text="@string/btn_create"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativelayout1"
+        android:layout_marginLeft="7dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:orientation="vertical" >
+
+            <!-- 主题/与会号码 -->
+
+            <RelativeLayout
+                android:id="@+id/conference_subject_view"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_corner_circle_no_shadow" >
+
+                <TextView
+                    android:id="@+id/meeting_subject_tag"
+                    android:layout_width="70dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="19dp"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/subject"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/meeting_clear_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/login_clear_username" />
+
+                <EditText
+                    android:id="@+id/subject"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/meeting_clear_subject"
+                    android:layout_toRightOf="@+id/meeting_subject_tag"
+                    android:background="@null"
+                    android:hint="@string/tap_input_theme"
+                    android:textColor="#333333"
+                    android:textColorHint="@color/conversation_text_color"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/conference_members_number_view"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_corner_circle_no_shadow" >
+
+                <TextView
+                    android:id="@+id/conference_members_number_tag"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="19dp"
+                    android:gravity="right"
+                    android:text="@string/members_number"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/conference_members_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/conference_members_number_tag"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- 会议时间 -->
+
+            <RelativeLayout
+                android:id="@+id/conference_time_view"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_corner_circle_no_shadow"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/conference_time_tag"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="19dp"
+                    android:gravity="right"
+                    android:text="@string/conference_time"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/conf_create_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/conference_time_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/conf_create_init_time"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- 会议类型 -->
+
+            <TextView
+                android:id="@+id/conf_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="14dp"
+                android:text="@string/conference_type"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/voice_conf_type"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_corner_circle_no_shadow"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/voice_conf_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="14dp"
+                    android:text="@string/conference_call"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/voice_conf_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/check" />
+            </RelativeLayout>
+
+            <!-- <RelativeLayout
+                android:id="@+id/multi_conf_type"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:background="@drawable/bg_corner_circle_no_shadow"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/multi_conf_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="14dp"
+                    android:text="@string/conference_data_call"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/multi_conf_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:paddingRight="12dp"
+                    android:src="@drawable/check" />
+            </RelativeLayout> -->
+
+            <!-- 与会者 -->
+
+            <RelativeLayout
+                android:id="@+id/conference_members_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_corner_circle_no_shadow"
+                android:gravity="center_vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/conference_members_tag"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="19dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/conference_members"
+                        android:textColor="#999999"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/auto_location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/conference_members_tag"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/meeting_add_txt" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
